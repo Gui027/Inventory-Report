@@ -6,8 +6,8 @@ def test_cria_produto():
         1,
         "nome_do_produto",
         "nome_da_empresa",
-        "data_de_fabricacao",
-        "data_de_validade",
+        "21/02/2022",
+        "21/02/2025",
         "numero_de_serie",
         "instrucoes_de_armazenamento"
     )
