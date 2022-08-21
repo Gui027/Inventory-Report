@@ -9,7 +9,7 @@ class Inventory:
 
     def read_csv(path):
         with open(path) as file:
-            csv_data = csv.DictReader(file)
+            csv_data = list(csv.DictReader(file))
 
         return csv_data
 
@@ -44,7 +44,7 @@ class Inventory:
             return Inventory.read_xml(path)
 
     @classmethod
-    def import_data(path, type):
+    def import_data(self, path, type):
         if type == "simples":
             return SimpleReport.generate(Inventory.type_file(path))
         return CompleteReport.generate(Inventory.type_file(path))

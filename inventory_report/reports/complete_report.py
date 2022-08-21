@@ -15,7 +15,7 @@ class CompleteReport(SimpleReport):
 
         for business_name, quant in counter:
             i += f"- {business_name}: {quant}\n"
-        
+
         return i
 
     @classmethod
