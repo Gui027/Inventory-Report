@@ -10,16 +10,21 @@ class CompleteReport(SimpleReport):
         for product in products:
             list_business_name.append(product["nome_da_empresa"])
 
-        return Counter(list_business_name)
+        counter = Counter(list_business_name).most_common()
+        i = ''
+
+        for business_name, quant in counter:
+            i += f"- {business_name}: {quant}\n"
+        
+        return i
 
     @classmethod
     def generate(cls, products):
         simple_report = SimpleReport.generate(products)
+        qtd = cls.counter_empresa(products)
 
         return (
             f"{simple_report}\n"
             f"Produtos estocados por empresa:\n"
-            f"Physicians Total Care, Inc.:\n"
-            f"Newton Laboratories, Inc.:\n"
-            f"Forces of Nature:"
+            f"{qtd}"
         )
