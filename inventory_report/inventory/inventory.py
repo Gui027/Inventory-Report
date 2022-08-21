@@ -40,6 +40,8 @@ class Inventory:
             return Inventory.read_csv(path)
         if "json" in path:
             return Inventory.read_json(path)
+        if "xml" in path:
+            return Inventory.read_xml(path)
 
     @classmethod
     def import_data(path, type):
