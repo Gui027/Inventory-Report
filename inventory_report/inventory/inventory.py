@@ -1,5 +1,6 @@
 import csv
 import json
+from xml.etree import ElementTree as ET
 from inventory_report.reports.simple_report import SimpleReport
 from inventory_report.reports.complete_report import CompleteReport
 
@@ -15,6 +16,22 @@ class Inventory:
     def read_json(path):
         with open(path) as file:
             dict_list = json.loads(file.read())
+
+        return dict_list
+
+    def read_xml(path):
+        tree = ET.parse(path)
+        root = list(tree.getroot())
+        dict_list = []
+        info_dict = {}
+
+        for index in range(len(root)):
+
+            for info in root[index]:
+                info_dict[info.tag] = info.text
+
+            dict_list.append(info_dict)
+            info_dict = {}
 
         return dict_list
 
