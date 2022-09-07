@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/83846567/188947024-5db2544a-0db0-4f49-be69-897a9b10892f.png)
 # Contexto
 
-Neste projeto resolvi problemas e otimizei algoritmos desenvolvendo a minha capacidade de implementar soluções para os mais diversos problemas do dia a dia!
+Neste projeto implementei algumas funções que fazem leitura e escrita de arquivos JSON, CSV e XML, mas utilizando a Programação Orientada a Objetos! implementei um gerador de relatórios que recebe como entrada arquivos com dados de um estoque e gera, como saída, um relatório acerca destes dados.
 
 ## Técnologias usadas
 
