@@ -1,16 +1,25 @@
-# 🚧 README em construção 🚧
+# Projeto Inventory Report
+![image](https://user-images.githubusercontent.com/83846567/188947024-5db2544a-0db0-4f49-be69-897a9b10892f.png)
+# Contexto
 
-<!-- Olá, Tryber!
+Neste projeto resolvi problemas e otimizei algoritmos desenvolvendo a minha capacidade de implementar soluções para os mais diversos problemas do dia a dia!
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+## Técnologias usadas
 
-É essencial que você preencha esse documento por conta própria, ok?
+Back-end:
+> Desenvolvido usando: Python, Pip, Flake8
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+## Instalando Dependências
 
--->
+```bash
+$ python3 -m pip install -r dev-requirements.txt
+``` 
+
+## Executando Testes
+
+* Para rodar todos os testes:
+
+  ```
+   $ python3 -m pytest
+  ```
